@@ -182,8 +182,89 @@ body
     color: var(--white);
 }
 
+/* Features */
+
+#features
+{
+    display:  flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: var(--bg-mid); 
+      min-height: 100vh;
+
+
+    text-align: center;
+
+
+    background: linear-gradient(  135deg,   var(--bg-mid),   var(--nav-bg) );
+    padding: 76px 10px 24px;
+
+}
+
+.featuresHeader
+{
+    position: relative;
+
+    margin-top:40px;
+}
+
+#feature-title
+{
+    color: var(--primary);
+
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 2;
+}
+
+#feature-desc
+{
+    color:white;
+    font-size:1.25rem;
+    line-height: 5;
+}
+
+
+.featuresGrid
+{
+
+    display: grid;
+
+    grid-template-columns:  repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+    
+}
+
+.featureCard
+{
+    background-color: var(--nav-bg);
+
+    padding: 35px 25px;
+    border-radius:  15px;
+    text-align: center;
+    transition: 0.3 ease;
+
+    color: var(--primary);
+    
+}
+
+.featureCard:hover
+{
+    transform: scale(1.1);
+    background-color: var(--primary);
+    color: var(--nav-bg);
+
+     box-shadow: 0 10px 30px rgba(0,255,255,0.2); 
+
+}
+
+.icon
+{
+    line-height: 3;
+}
 /* =========================
-   RESPONSIVE DESIGN
+RESPONSIVE DESIGN
 ========================= */
 
 @media (max-width: 992px)
@@ -256,6 +337,7 @@ body
     }
 }
 
+/* Responsive desgin */
 
 @media (max-width: 992px)
 {
