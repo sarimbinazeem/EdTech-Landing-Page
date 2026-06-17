@@ -193,14 +193,14 @@ body
     justify-content: center;
     align-items: center ;
     background-color: var(--bg-mid); 
-      min-height: 100vh;
+    
 
 
     text-align: center;
 
 
     background: linear-gradient(  135deg,   var(--bg-mid),   var(--nav-bg) );
-    padding: 100px 20px;
+    padding: 120px 20px;
 
 }
 
@@ -279,8 +279,97 @@ body
 }
 
 
+/* Statistics */
+#statistics
+{
 
 
+    background: linear-gradient(  135deg,   var(--nav-bg),   var(--bg-mid) );
+    text-align:  center;
+    padding: 100px 10%;
+
+ 
+
+}
+
+
+.statsGrid
+{
+    display:flex;
+    justify-content: center;
+    align-items:  center;
+
+    flex-wrap: wrap;
+    margin-top: 60px;
+    gap:30px;
+
+}
+
+.statsHeader{
+    margin-bottom: 70px;
+}
+
+.statsHeader p
+{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.statsHeader h2
+{
+    color: var(--primary);
+    font-size:  5rem;
+    margin: 0;
+
+}
+
+.statsCard
+{
+   background-color: var(--nav-bg);
+
+    padding: 45px 30px;
+    border-radius:  20px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    padding: 40px 20px;
+    flex:1;
+    min-width: 240px;
+    max-width: 300px;
+    text-align: center;
+
+    color: var(--primary);
+    cursor: pointer;
+
+    border: 2px solid rgba(255,255,255,0.08);
+
+    
+}
+
+.statsCard:hover
+{
+    transform: translateY(-8px) scale(1.03);
+    background-color: var(--primary);
+    color: var(--nav-bg);
+
+    box-shadow: 0 10px 30px rgba(0,255,255,0.2); 
+}
+
+.statsH
+{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.statsD
+{
+    font-size: 1.1rem;
+    color: var(--light-gray);
+}
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
@@ -295,6 +384,11 @@ RESPONSIVE DESIGN
     .hero-description
     {
         font-size: 1.2rem;
+    }
+
+    .statsHeader h2
+    {
+        font-size: 3.5rem;
     }
 }
 
@@ -335,6 +429,14 @@ RESPONSIVE DESIGN
         width: 220px;
         height: 70px;
     }
+
+    .statsGrid{
+        justify-content: center;
+    }
+
+    .statsCard{
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 480px)
@@ -352,6 +454,31 @@ RESPONSIVE DESIGN
     .navElements
     {
         font-size: 16px;
+    }
+
+    .statsHeader h2
+    {
+        font-size: 3rem;
+    }
+
+    .statsHeader p
+    {
+        font-size: 1.2rem;
+    }
+
+    .statsH
+    {
+        font-size: 2.5rem;
+    }
+
+    .statsD
+    {
+        font-size: 1.2rem;
+    }
+
+    .statsCard
+    {
+        min-width: 100%;
     }
 }
 
