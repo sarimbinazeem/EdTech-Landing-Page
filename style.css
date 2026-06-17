@@ -67,7 +67,7 @@ body
     font-size: 18px;
     font-weight: 600;
 
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .navElements:hover
@@ -98,7 +98,9 @@ body
 
 .hero-section
 {
+    width: 100%;
     max-width: 1000px;
+    padding:  0px 20px;
 }
 
 .hero-title
@@ -134,7 +136,8 @@ body
 .cta-primary,
 .cta-secondary
 {
-    width: 250px;
+    padding: 20px 40px;
+    width: fit-content;
     height: 80px;
 
     display: flex;
@@ -148,7 +151,7 @@ body
     font-size: 1.1rem;
     font-weight: bold;
 
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Primary Button */
@@ -197,15 +200,21 @@ body
 
 
     background: linear-gradient(  135deg,   var(--bg-mid),   var(--nav-bg) );
-    padding: 76px 10px 24px;
+    padding: 100px 20px;
 
+}
+
+.featuresContainer
+{
+    width: 100%;
+    max-width: 1200px;
 }
 
 .featuresHeader
 {
     position: relative;
 
-    margin-top:40px;
+
 }
 
 #feature-title
@@ -214,14 +223,15 @@ body
 
     font-size: 3rem;
     font-weight: bolder;
-    line-height: 2;
+    margin-bottom: 20px;
 }
 
 #feature-desc
 {
     color:white;
     font-size:1.25rem;
-    line-height: 5;
+    line-height: 1.6;
+    margin-bottom: 60px;
 }
 
 
@@ -232,7 +242,7 @@ body
 
     grid-template-columns:  repeat(auto-fit, minmax(280px, 1fr));
 
-    gap: 30px;
+    gap: 50px;
     
 }
 
@@ -241,17 +251,20 @@ body
     background-color: var(--nav-bg);
 
     padding: 35px 25px;
-    border-radius:  15px;
+    border-radius:  20px;
     text-align: center;
-    transition: 0.3 ease;
+    transition: all 0.3s ease;
 
     color: var(--primary);
+    cursor: pointer;
+
+    border: 2px solid rgba(255,255,255,0.08);
     
 }
 
 .featureCard:hover
 {
-    transform: scale(1.1);
+    transform: translateY(-10px);
     background-color: var(--primary);
     color: var(--nav-bg);
 
@@ -261,8 +274,13 @@ body
 
 .icon
 {
-    line-height: 3;
+    font-size:  2rem;
+      margin-bottom: 20px;
 }
+
+
+
+
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
@@ -337,74 +355,3 @@ RESPONSIVE DESIGN
     }
 }
 
-/* Responsive desgin */
-
-@media (max-width: 992px)
-{
-    .hero-title
-    {
-        font-size: 3rem;
-    }
-
-    .hero-description
-    {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 768px)
-{
-    #navigation
-    {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 15px;
-        gap: 15px;
-    }
-
-    .logo
-    {
-        width: 220px;
-    }
-
-    .hero-title
-    {
-        font-size: 2.5rem;
-    }
-
-    .hero-description
-    {
-        font-size: 1rem;
-    }
-
-    .cta-buttons
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-primary,
-    .cta-secondary
-    {
-        width: 220px;
-        height: 70px;
-    }
-}
-
-@media (max-width: 480px)
-{
-    .hero-title
-    {
-        font-size: 2rem;
-    }
-
-    .hero-description
-    {
-        font-size: 0.95rem;
-    }
-
-    .navElements
-    {
-        font-size: 16px;
-    }
-}
