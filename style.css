@@ -286,8 +286,8 @@ body
     text-align:  center;
     padding: 270px 10%;
 
- 
-    background: linear-gradient(  135deg,   var(--nav-bg),   var(--nav-mid) );
+    background:
+    radial-gradient(circle at center,  var(--bg-mid),  var(--bg-dark ) );
 }
 
 
@@ -374,8 +374,119 @@ body
 #courses
 {
     background: linear-gradient(  135deg,   var(--bg-mid),   var(--nav-bg) );
+    padding: 120px 10%;
+
+    text-align:  center;
+
 }
 
+.coursesContainer
+{
+    width: 100%;
+    max-width: 2000px;
+}
+
+.coursesHeader
+{
+    line-height: 1.6;
+}
+
+.coursesHeader h2
+{
+    font-size: 3rem;
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+.coursesHeader p
+{
+    font-size: 1.25rem;
+    max-width:700px;
+    margin:auto;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.coursesGrid
+{
+     display: grid;
+
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 50px;
+    
+}
+
+.courseCard
+{
+    background-color: var(--bg-mid);
+
+    padding: 30px 30px;
+    border-radius:  20px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+
+    color: var(--primary);
+    overflow: hidden;
+   
+    
+
+    border: 2px solid rgba(255,255,255,0.08); 
+}
+
+.courseCard:hover
+{
+    transform: translateY(-8px);
+  
+    border-color: var(--primary);
+
+    box-shadow: 0 10px 80px rgba(6,182,212,.25);
+}
+
+
+.courseInfo 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    margin-top: 20px;
+}
+
+.courseInfo p
+{
+    background: rgba(75, 75, 75, 0.247);
+    color: var(--primary);
+
+    padding: 5px 14px;
+    border-radius: 15px;
+}
+
+
+.courseEnroll
+{
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 14px ;
+    border-radius: 15px;
+    padding:15px 60px;
+    cursor: pointer;
+    
+}
+
+.courseImage
+{
+    width:100%;
+    height:220px;
+    display: block;
+    object-fit: cover; 
+    margin-bottom: 20px;
+
+}
 
 /* =========================
 RESPONSIVE DESIGN
