@@ -108,7 +108,7 @@ body
 {
     font-size: 4rem;
     color: var(--primary);
-
+    font-weight: 800;
     margin-bottom: 30px;
 
     line-height: 1.2;
@@ -220,7 +220,7 @@ body
     color: var(--primary);
 
     font-size: 3rem;
-    font-weight: bolder;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
@@ -319,6 +319,7 @@ body
 {
     color: var(--primary);
     font-size:  5rem;
+    font-weight: 800;
     margin: 0;
 
 }
@@ -374,7 +375,7 @@ body
 #courses
 {
     background: linear-gradient(  135deg,   var(--bg-mid),   var(--nav-bg) );
-    padding: 120px 10%;
+    padding: 143px 10%;
 
     text-align:  center;
 
@@ -395,7 +396,7 @@ body
 {
     font-size: 3rem;
     color: var(--primary);
-    font-weight: bolder;
+    font-weight: 800;
 }
 
 .coursesHeader p
@@ -494,13 +495,14 @@ body
     background:radial-gradient(circle at center,  var(--bg-mid),  var(--bg-dark ) );
 
     text-align:  center;
-    padding: 255px 10%;
+    padding: 180px 10%;
 }
 
 .testContainer
 {
     width: 100%;
     min-width: 1200px;
+    margin:auto;
 }
 
 .testHeader
@@ -511,14 +513,16 @@ body
 .testHeader h2
 {
     font-size:  3rem;
-    font-weight: bolder;
+    font-weight: 800;
     color: var(--primary);
+    margin-bottom:15px;
 }
 
 .testHeader p
 {
     font-size:  1.25rem;
     margin-bottom: 40px;
+    line-height:2;
 }
 
 .testGrid
@@ -535,8 +539,6 @@ body
     background: var(--bg-mid);
     border-radius: 15px;
     
-    min-width: 220px;
-    max-width: 1000px;
 
     border: 3px solid rgba(75, 75, 75, 0.247);
     overflow: hidden;
@@ -561,7 +563,8 @@ body
 .stars{
     color:gold;
     font-size: 1.5rem;
-    margin-left: 250px;
+    display:flex;
+    justify-content:flex-end;
 }
 
 .review
@@ -569,12 +572,15 @@ body
     color:white;
     margin-bottom: 30px;
     margin-top: 25px;
+    line-height:1.7;
 }
 
 .student
 {
     display: flex;
-    justify-content: space-between;
+    align-items:center;
+    gap:15px;
+    justify-content:flex-start;
     margin-top: 50px;
 }
 
@@ -586,6 +592,12 @@ body
     object-fit: cover;
     
 }
+
+.studentInfo h3
+{
+    color:  var(--primary);
+}
+
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
@@ -721,5 +733,6 @@ RESPONSIVE DESIGN
     {
         margin-left: 60px;
     }
+
 }
 
