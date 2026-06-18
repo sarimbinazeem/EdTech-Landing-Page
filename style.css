@@ -428,7 +428,6 @@ body
 
     min-width: 250px;
     max-width: 300px;
-    text-align: center;
 
     color: var(--primary);
     overflow: hidden;
@@ -488,8 +487,105 @@ body
 
 }
 
+/* Testimonial */
 
+#testimonials
+{
+    background:radial-gradient(circle at center,  var(--bg-mid),  var(--bg-dark ) );
 
+    text-align:  center;
+    padding: 255px 10%;
+}
+
+.testContainer
+{
+    width: 100%;
+    min-width: 1200px;
+}
+
+.testHeader
+{
+    line-height: 2;
+}
+
+.testHeader h2
+{
+    font-size:  3rem;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+.testHeader p
+{
+    font-size:  1.25rem;
+    margin-bottom: 40px;
+}
+
+.testGrid
+{
+     display: grid;
+
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 50px;
+}
+
+.testCard
+{
+    background: var(--bg-mid);
+    border-radius: 15px;
+    
+    min-width: 220px;
+    max-width: 1000px;
+
+    border: 3px solid rgba(75, 75, 75, 0.247);
+    overflow: hidden;
+
+    text-align: center;
+    transition: all 0.3s ease;
+
+    padding:30px 30px;
+    line-height: 2;
+
+}
+
+.testCard:hover
+{
+    transform: translateY(-8px);
+  
+    border-color: var(--primary);
+
+    box-shadow: 0 10px 80px rgba(6,182,212,.25);
+}
+
+.stars{
+    color:gold;
+    font-size: 1.5rem;
+    margin-left: 250px;
+}
+
+.review
+{
+    color:white;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.student
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.student img
+{
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+    
+}
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
