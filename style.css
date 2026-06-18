@@ -488,6 +488,8 @@ body
 
 }
 
+
+
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
@@ -555,6 +557,26 @@ RESPONSIVE DESIGN
     .statsCard{
         max-width: 350px;
     }
+
+    #courses
+    {
+        padding: 80px 6%;
+    }
+
+    .coursesHeader
+    {
+        font-size:2rem;
+    }
+
+    .courseImage
+    {
+        height: 200px;
+    }
+
+    .coursesGrid
+    {
+        gap:25px;
+    }
 }
 
 @media (max-width: 480px)
@@ -597,6 +619,11 @@ RESPONSIVE DESIGN
     .statsCard
     {
         min-width: 100%;
+    }
+
+    .courseCard
+    {
+        margin-left: 60px;
     }
 }
 
