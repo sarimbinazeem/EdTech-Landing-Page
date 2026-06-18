@@ -19,6 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 html
@@ -284,7 +285,7 @@ body
 {
 
 
-    background: linear-gradient(  135deg,   var(--nav-bg),   var(--bg-mid) );
+    background: var(--bg-dark);
     text-align:  center;
     padding: 100px 10%;
 
