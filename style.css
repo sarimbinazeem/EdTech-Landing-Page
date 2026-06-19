@@ -375,7 +375,7 @@ body
 #courses
 {
     background: linear-gradient(  135deg,   var(--bg-mid),   var(--nav-bg) );
-    padding: 143px 10%;
+    padding: 155px 10%;
 
     text-align:  center;
 
@@ -385,6 +385,8 @@ body
 {
     width: 100%;
     max-width: 2000px;
+    margin:0 auto;
+   
 }
 
 .coursesHeader
@@ -416,6 +418,7 @@ body
 
     gap: 50px;
     
+    
 }
 
 .courseCard
@@ -427,8 +430,8 @@ body
     text-align: center;
     transition: all 0.3s ease;
 
-    min-width: 250px;
-    max-width: 300px;
+    width: 100%;
+
 
     color: var(--primary);
     overflow: hidden;
@@ -501,7 +504,7 @@ body
 .testContainer
 {
     width: 100%;
-    min-width: 1200px;
+    max-width: 1200px;
     margin:auto;
 }
 
@@ -598,12 +601,21 @@ body
     color:  var(--primary);
 }
 
+#ali
+{
+    margin-top: 75px;
+}
+
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
 
 @media (max-width: 992px)
 {
+    #navigation
+    {
+        justify-content: space-between;
+    }
     .hero-title
     {
         font-size: 3rem;
@@ -689,6 +701,7 @@ RESPONSIVE DESIGN
 
 @media (max-width: 480px)
 {
+
     .hero-title
     {
         font-size: 2rem;
@@ -704,6 +717,10 @@ RESPONSIVE DESIGN
         font-size: 16px;
     }
 
+    #statistics
+    {
+        padding:100px 5%;
+    }
     .statsHeader h2
     {
         font-size: 3rem;
@@ -729,9 +746,34 @@ RESPONSIVE DESIGN
         min-width: 100%;
     }
 
-    .courseCard
+    #courses
+     {
+        padding:100px 5%;
+    }
+
+    #features
+     {
+        padding:100px 5%;
+    }
+
+    #testimonials
     {
-        margin-left: 60px;
+        padding:100px 5%;
+    }
+
+    .testHeader h2
+    {
+        font-size: 2rem;
+    }
+
+    .testHeader p
+    {
+        font-size: 1.25rem;
+    }
+
+            body
+    {
+        background: red !important;
     }
 
 }
