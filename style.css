@@ -666,13 +666,15 @@ body
 
     transition: all 0.3s ease;
     border: 4px solid rgba(255,255,255,0.08);
+
+    position:relative;
 }
 
 .priceCard:hover
 {
     transform:translateY(-10px);
 
-    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    box-shadow: 0 10px 40px rgba(6,182,212,.25);
 
     border-color:var(--primary);
 }
@@ -729,6 +731,37 @@ body
     transform: scale(1.1);
 }
 
+.popular
+{
+    transform: scale(1.05);
+    border: 4px solid var(--primary);
+    box-shadow: 0 10px 40px rgba(6,182,212,.25);
+    
+}
+
+.popular:hover
+{
+      transform:translateY(-10px) scale(1.05);
+}
+
+.badge
+{
+    position: absolute;
+    top: -12px;
+    left: 36.5%;
+    
+
+    transform:translateX(-15%);
+
+    background-color: var(--primary);
+    border-radius: 30px;
+
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+
+  
+}
 
 /* =========================
 RESPONSIVE DESIGN
