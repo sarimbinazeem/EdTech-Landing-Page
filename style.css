@@ -606,6 +606,31 @@ body
     margin-top: 75px;
 }
 
+
+/* pricing */
+
+#pricing
+{
+     background: linear-gradient(  135deg,   var(--bg-mid),   var(--nav-bg) );
+    padding: 155px 10%;
+
+    text-align:  center;
+}
+
+.priceContainer
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.priceHeader
+{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
