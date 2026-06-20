@@ -981,7 +981,7 @@ summary:focus-visible
 .inputGroup label
 {
     color: var(--white);
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -996,6 +996,7 @@ summary:focus-visible
     color: white;
     outline: none;
     transition:all 0.3s ease;
+    border-radius:10px;
 }
 
 
@@ -1014,16 +1015,15 @@ summary:focus-visible
 textarea
 {
     resize:vertical;
-    min-height:100px;
+    min-height:120px;
 }
 
 
 .contactBtn
 {
-    padding: 10px 10px;
+
     width: fit-content;
 
-    flex-direction: flex-start;
     border-radius: 15px;
     background-color: var(--primary);
 
@@ -1034,12 +1034,21 @@ textarea
     border: 4px solid rgba(3, 3, 3, 0);
 
     transition: all 0.3s ease;
+    color:white;
 }
 
 .contactBtn:hover
 {
     transform: translateY(-4px);
     box-shadow:0 5px 30px rgba(6,182,212,.35);
+}
+
+.contactNote
+{
+    margin-top: 50px;
+    color: var(--light-gray);
+    font-size: 1rem;
+    
 }
 /* =========================
 RESPONSIVE DESIGN
