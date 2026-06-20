@@ -498,7 +498,7 @@ body
     background:radial-gradient(circle at center,  var(--bg-mid),  var(--bg-dark ) );
 
     text-align:  center;
-    padding: 180px 10%;
+    padding: 250px 10%;
 }
 
 .testContainer
@@ -627,7 +627,7 @@ body
 .priceHeader
 {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .priceHeader h2
@@ -635,7 +635,7 @@ body
     font-size: 3rem;
     font-weight: 800;
     color: var(--primary);
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .priceHeader p
@@ -651,7 +651,7 @@ body
 
     grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
 
-    gap: 100px;
+    gap: 50px;
 
 }
 
@@ -668,6 +668,9 @@ body
     border: 4px solid rgba(255,255,255,0.08);
 
     position:relative;
+    display: flex;
+    flex-direction: column;
+   
 
 }
 
@@ -697,19 +700,23 @@ body
 {
     color: var(--light-gray);
     margin-bottom: 30px;
+    line-height: 1.6;
 }
 
 .priceCard ul
 {
     list-style: none;
     margin-bottom: 30px;
+    flex: 1;
 }
 
-.free ul
+.priceCard li
 {
-    margin-bottom: 110px;
-    flex:1;
+    line-height: 2;
 }
+
+
+
 
 .priceCard button
 {
@@ -725,12 +732,15 @@ body
     font-size: 1rem;
     font-weight: 700;
     transition: all 0.3s ease;
+    align-self: center;
     
 }
 
 .priceCard button:hover
 {
     transform: scale(1.1);
+    background:#0891B2;
+
 }
 
 .popular
@@ -750,10 +760,9 @@ body
 {
     position: absolute;
     top: -12px;
-    left: 36.5%;
-    
+    left:50%;
 
-    transform:translateX(-15%);
+    transform:translateX(-50%);
 
     background-color: var(--primary);
     border-radius: 30px;
@@ -762,8 +771,12 @@ body
     font-weight: 700;
     font-size: 0.9rem;
 
+    
   
 }
+
+
+
 
 /* =========================
 RESPONSIVE DESIGN
@@ -875,6 +888,27 @@ RESPONSIVE DESIGN
     .coursesGrid
     {
         gap:25px;
+    }
+
+       #pricing
+    {
+        padding:80px 6%;
+    }
+
+    .priceGrid
+    {
+        grid-template-columns:1fr;
+    }
+
+
+    .priceHeader h2
+    {
+        font-size:2rem;
+    }
+
+    .priceCard h1
+    {
+        font-size:2.5rem;
     }
 }
 
