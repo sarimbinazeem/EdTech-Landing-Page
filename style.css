@@ -32,6 +32,8 @@ body
     background-color: var(--bg-dark);
 }
 
+
+
 /* 
    NAVIGATION BAR
  */
@@ -806,6 +808,111 @@ body
     box-shadow: 0 5px 20px rgba(23, 204, 236, 0.2);
 }
 
+/* FAQ */
+#faq
+{
+    padding: 150px 10%;
+     background:radial-gradient(circle at center,  var(--bg-mid),  var(--bg-dark ) );
+
+    text-align:  center;
+}
+
+.faqContainer
+{
+    max-width: 1200px;
+    margin:auto;
+}
+
+
+.faqHeader
+{
+    margin-bottom: 70px;
+}
+
+.faqHeader h2
+{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.faqHeader p
+{
+    font-size: 1.25rem;
+
+
+}
+
+.faqList
+{
+    display: flex;
+
+        flex-direction: column;
+    gap: 20px;
+}
+
+.faqList details{
+    background-color: var(--bg-mid);
+
+    border: 2px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.faqList details:hover
+{
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.faqList summary
+{
+    font-weight: 600;
+    list-style: none;
+
+    font-size: 1.15rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.faqList summary::after
+{
+    content: "+";
+
+    font-size: 1.5rem;
+
+    color: var(--primary);
+    transition: 0.3s;
+}
+
+
+.faqList details[open] summary::after
+{
+    content: "−";
+
+    transform: rotate(180deg);
+}
+
+.faqList p
+{
+    margin-top: 20px;
+    line-height: 1.8;
+    color: var(--light-gray);
+}
+
+.faqList details[open]
+{
+    border-color: var(--primary);
+
+        box-shadow: 0 0 20px rgba(6,182,212,.25);
+}
+
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
@@ -826,9 +933,29 @@ RESPONSIVE DESIGN
         font-size: 1.2rem;
     }
 
+    #features
+    {
+         padding: 100px 6%;
+    }
+
+    #statistics
+    {
+         padding: 125px 10%;
+    }
+
     .statsHeader h2
     {
         font-size: 3.5rem;
+    }
+    
+    #courses
+    {
+         padding: 100px 6%;
+    }
+
+    #testimonials
+    {
+         padding: 100px 10%;
     }
 
     .priceGrid
@@ -890,6 +1017,16 @@ RESPONSIVE DESIGN
         height: 70px;
     }
 
+    #features
+    {
+         padding: 70px 6%;
+    }
+
+    #statistics
+    {
+         padding: 100px 10%;
+    }
+
     .statsGrid{
         justify-content: center;
     }
@@ -917,6 +1054,13 @@ RESPONSIVE DESIGN
     {
         gap:25px;
     }
+
+
+    #testimonials
+    {
+         padding: 100px 10%;
+    }
+
 
        #pricing
     {
@@ -951,6 +1095,23 @@ RESPONSIVE DESIGN
         max-width: 200px;
         text-align: center;
     }
+
+    #faq
+    {
+        padding: 70px 6%;
+    }
+
+    .faqHeader h2
+    {
+        font-size: 2rem;
+    }
+
+    .faqList summary
+    {
+        font-size: 1rem;
+    }
+
+
 }
 
 @media (max-width: 480px)
