@@ -1050,6 +1050,34 @@ textarea
     font-size: 1rem;
     
 }
+
+/* footer */
+#footer
+{
+    background-color: var(--nav-bg);
+     color: var(--white);
+
+    padding: 70px 8% 25px;
+}
+
+.footerContainer
+{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+.footerLogo
+{
+    flex:1;
+    min-width: 260px;
+}
+
 /* =========================
 RESPONSIVE DESIGN
 ========================= */
