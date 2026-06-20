@@ -775,8 +775,36 @@ body
   
 }
 
+.priceTrust
+{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
+    flex-wrap: wrap;
+}
 
+.trustItem
+{
+    color: var(--light-gray);
+    border-radius: 30px;
+    padding: 12px 22px;
+
+    background-color: rgb(77, 77, 77);
+    border: 2px solid rgba(87, 85, 85, 0.08);
+    font-size: 1rem;
+}
+
+.trustItem:hover
+{
+    color: var(--white);
+        border-color: var(--primary);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 20px rgba(23, 204, 236, 0.2);
+}
 
 /* =========================
 RESPONSIVE DESIGN
@@ -910,6 +938,19 @@ RESPONSIVE DESIGN
     {
         font-size:2.5rem;
     }
+
+    .pricingTrust
+    {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .trustItem
+    {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px)
@@ -989,5 +1030,19 @@ RESPONSIVE DESIGN
         background: red !important;
     }
 
+    .pricingTrust
+    {
+        flex-direction: column;
+        gap: 50px;
+        padding: 6px 8%;
+        
+    }
+
+    .trustItem
+    {
+        width: 100%;
+        max-width: 150px;
+        text-align: center;
+    }
 }
 
