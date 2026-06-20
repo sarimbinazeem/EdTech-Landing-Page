@@ -1241,6 +1241,20 @@ RESPONSIVE DESIGN
         
 
     }
+
+     .footerContainer
+    {
+        flex-direction: column;
+
+        gap: 50px;
+    }
+
+    .footerLinks
+    {
+        width: 100%;
+
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 768px)
@@ -1374,7 +1388,23 @@ RESPONSIVE DESIGN
     {
         font-size: 1rem;
     }
+    
+    .footerLinks
+    {
+        flex-direction: column;
 
+        gap: 40px;
+    }
+
+    .socialIcons
+    {
+        justify-content: flex-start;
+    }
+
+    .footerBottom
+    {
+        font-size: .9rem;
+    }
 
 }
 
